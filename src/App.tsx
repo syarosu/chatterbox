@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { db } from "./firebase";
 import { collection, getDocs } from "firebase/firestore";
+import { Button } from "./components/ui/button";
 
 function App() {
   useEffect(() => {
@@ -14,9 +15,12 @@ function App() {
     fetchData();
   }, []);
 
-  return <h1 className="text-3xl font-bold underline">
-    🔥 Firebase 연결 완료!
-  </h1>
+  return <div>
+    <Button onClick={() => alert("click")}>Click</Button>
+    <h1 className="text-3xl font-bold underline">
+      🔥 Firebase 연결 완료!
+    </h1>
+  </div>
 }
 
 export default App;
