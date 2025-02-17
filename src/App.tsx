@@ -14,7 +14,9 @@ function App() {
     fetchData();
   }, []);
 
-  return <h1>🔥 Firebase 연결 완료!</h1>;
+  return <h1 className="text-3xl font-bold underline">
+    🔥 Firebase 연결 완료!
+  </h1>
 }
 
 export default App;
